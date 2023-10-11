@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./delicious.css">
+    <title>Delicious Buffet Restaurant</title>
+</head>
+<body>
+    <div id="main">
+    <h3>Delicious Buffet Restaurant</h3>
+    <div>
+        <form action="" onsubmit="final()">
+            <table>
+                <tbody>
+                    <!-- customer name  -->
+                    <tr>
+                        <td>
+                            Customer Name
+                        </td>
+                        <td>
+                            <input type="text" id="name" placeholder="Enter your name">
+                        </td>
+                       </tr>
+                        <!-- contact no -->
+                    <tr>
+                        <td>
+                            Contact no
+                        </td>
+                        <td> <input type="tel" id="phno"> </td>
+                    </tr>
+                    <!-- date  -->
+                    <tr>
+                        <td>
+                            Date
+                        </td>
+                        <td> <input type="date" id="date"> </td>
+                    </tr>
+                    <!-- Timings -->
+                    <tr>
+                        <td>
+                            Timings
+                        </td>
+                        <td>
+                            <input type="radio" name="date" id="c1">
+                            <label for="c1">1-4  pm</label>
+                            <input type="radio"  name="date" id="c2">
+                            <label for="c2">4-7 pm</label>
+                            <input type="radio" name="date" id="c3">
+                            <label for="c3">7-10 pm</label>
+                           
+                        </td>
+
+                    </tr>
+                    <!-- vegetarian -->
+                    <tr>
+                        <td>
+                            Vegetarian
+                        </td>
+                        <td>
+                            <table style="border: 1px solid black;">
+                                <tr>
+                                    <td >
+                                        Adults
+                                    </td>
+                                    <td>
+                                        <input type="number" value="0" id="va">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Kids(5-6 yrs)
+                                    </td>
+                                    <td>
+                                        <input type="number" value="0" id="vk">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Non-vegetarin -->
+                    <tr>
+                        <td> Non-Vegetrain</td>
+                        <td>
+                            <table style="border: 1px solid black;">
+                                <tr>
+                                    <td >
+                                        Adults
+                                    </td>
+                                    <td>
+                                        <input type="number" value="0" id="nva">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Kids(5-6 yrs)
+                                    </td>
+                                    <td>
+                                        <input type="number" value="0" id="nvk">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- occasion -->
+                    <tr>
+                        <td>
+                            Occasion
+                        </td>
+                        <td>
+                           
+                            <input list="occ" name="occasion" id="occasion">
+                            <datalist id="occ">
+                                <option value="Team dinner">
+                                <option value="Family reunion">
+                                <option value="Team lunch">
+                                <option value="celebration">
+                                <option value="Birthday">
+                              </datalist>
+                        </td>
+                    </tr>
+                    <!-- Parking let parking charge 10 rs we will give it in logic because parking is not compalsary-->
+                    <tr>
+                        <td>
+                            Parking
+                        </td>
+                        <td>
+                            <input type="checkbox" value="0" name="parking" id="park">
+                            <label for="park">Parking Required</label>
+                        </td>
+                    </tr>
+                    <!-- submit button -->
+                    <tr>
+                        <td>
+                            <input type="submit" value="Submit">
+                        </td>
+                        <td>
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p id="answer">  </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <script src="./del.js"></script>
+</div>
+</body>
+</html>
